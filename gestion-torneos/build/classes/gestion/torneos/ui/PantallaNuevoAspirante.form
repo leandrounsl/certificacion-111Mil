@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="sexoButtonGroup">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.ButtonGroup()"/>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="sexoButtonGroup.add(masculinoRadioButton);&#xa;sexoButtonGroup.add(femeninoRadioButton);&#xa;masculinoRadioButton.setSelected(true);"/>
+      </AuxValues>
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Nuevo Aspirante"/>
+    <Property name="iconImage" type="java.awt.Image" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+      <Connection code="Toolkit.getDefaultToolkit().getImage(&#xa;&#x9;&#x9;&#x9;&#x9;getClass().getResource(&#xa;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;/resources/img/athletics-16x16.png&quot;))" type="code"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="dniLabel" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="direccionLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="fechaNacimientoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="apellidoLabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="nombresLabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="sexoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="apellidoTextField" linkSize="4" alignment="0" min="-2" pref="153" max="-2" attributes="0"/>
+                          <Component id="direccionTextField" linkSize="4" alignment="0" min="-2" pref="153" max="-2" attributes="0"/>
+                          <Component id="fechaNacimientoTextField" linkSize="4" alignment="0" min="-2" pref="153" max="-2" attributes="0"/>
+                          <Component id="dniTextField" linkSize="4" alignment="0" min="-2" pref="237" max="-2" attributes="0"/>
+                          <Component id="nombresTextField" linkSize="4" min="-2" pref="292" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="masculinoRadioButton" min="-2" max="-2" attributes="0"/>
+                                  <Component id="aceptarButton" linkSize="2" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="cancelarButton" linkSize="2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="femeninoRadioButton" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="19" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="nombresLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="nombresTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="apellidoTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="apellidoLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="direccionLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="direccionTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="fechaNacimientoLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="fechaNacimientoTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="dniLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="dniTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="sexoLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="masculinoRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="femeninoRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="aceptarButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cancelarButton" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="16" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="nombresLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nombres: "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="nombresTextField">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nombresTextFieldActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="apellidoLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Apellido:  "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="apellidoTextField">
+    </Component>
+    <Component class="javax.swing.JLabel" name="direccionLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Direcci&#xf3;n:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="direccionTextField">
+    </Component>
+    <Component class="javax.swing.JLabel" name="fechaNacimientoLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fecha de Nacimiento: "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fechaNacimientoTextField">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="TextPrompt placeholder = new TextPrompt(&quot;Formato dd/mm/aaaaa&quot;, fechaNacimientoTextField);&#xa;    placeholder.changeAlpha(0.75f);&#xa;    placeholder.changeStyle(Font.ITALIC);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="sexoLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sexo: "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="masculinoRadioButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Masculino"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="femeninoRadioButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Femenino"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="dniLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="DNI: "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="aceptarButton">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/resources/img/accept-16x16.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Aceptar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="aceptarButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="cancelarButton">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/resources/img/cancel-16x16.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Cancelar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cancelarButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="dniTextField">
+    </Component>
+  </SubComponents>
+</Form>

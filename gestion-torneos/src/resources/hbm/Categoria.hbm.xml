@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="db_torneos" name="gestion.torneos.model.Categoria" optimistic-lock="version" table="categoria">
+        <id name="idCategoria" type="int">
+            <column name="id_categoria"/>
+            <generator class="increment"/>
+        </id>
+        <property name="nombre" type="string">
+            <column length="50" name="nombre" not-null="true"/>
+        </property>
+        <property name="descripcion" type="string">
+            <column length="500" name="descripcion"/>
+        </property>
+        <!--<property name="genero" type="string">
+          <column length="45" name="genero" not-null="true"/>
+        </property>-->
+        <property name="genero" column="genero" not-null="true">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">gestion.torneos.model.Genero</param>
+            </type>
+        </property>
+        <property name="edadDesde" type="int">
+            <column name="edad_desde" not-null="true"/>
+        </property>
+        <property name="edadHasta" type="int">
+            <column name="edad_hasta" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="db_torneos" name="gestion.torneos.model.Aspirante" optimistic-lock="version" table="aspirante">
+        <id name="idCompetidor" type="int">
+            <column name="id_competidor"/>
+            <generator class="increment"/>
+        </id>
+        <many-to-one class="gestion.torneos.model.Escuela" lazy="false" name="escuela">
+            <column name="escuela_id_escuela" not-null="true"/>
+        </many-to-one>
+        <property name="nombre" type="string">
+            <column name="nombre" not-null="true"/>
+        </property>
+        <property name="apellido" type="string">
+            <column name="apellido" not-null="true"/>
+        </property>
+        <property name="direccion" type="string">
+            <column name="direccion"/>
+        </property>
+        <property name="fechaNacimiento" type="date">
+            <column length="10" name="fecha_nacimiento" not-null="true"/>
+        </property>
+        <property name="dni" type="int">
+            <column name="dni" not-null="true"/>
+        </property>
+        <!--<property name="sexo" type="string">
+          <column length="45" name="sexo" not-null="true"/>
+        </property>-->
+        <property name="sexo" column="sexo" not-null="true">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">gestion.torneos.model.Genero</param>
+            </type>
+        </property>
+        <bag cascade="all" lazy="false" name="inscripcions" table="inscripcion">
+            <key>
+                <column name="aspirante_id_competidor" not-null="true"/>
+            </key>
+            <one-to-many class="gestion.torneos.model.Inscripcion"/>
+        </bag>
+    </class>
+</hibernate-mapping>

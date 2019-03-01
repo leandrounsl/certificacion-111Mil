@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="db_torneos" name="gestion.torneos.model.Inscripcion" optimistic-lock="version" table="inscripcion">
+        <id name="idInscripcion" type="int">
+            <column name="id_inscripcion"/>
+            <generator class="increment"/>
+        </id>
+        <many-to-one class="gestion.torneos.model.Aspirante" lazy="false" name="aspirante">
+            <column name="aspirante_id_competidor" not-null="true"/>
+        </many-to-one>
+        <many-to-one class="gestion.torneos.model.Categoria" lazy="false" name="categoria">
+            <column name="categoria_id_categoria" not-null="true"/>
+        </many-to-one>
+        <many-to-one class="gestion.torneos.model.Disciplina" lazy="false" name="disciplina">
+            <column name="disciplina_id_disciplina" not-null="true"/>
+        </many-to-one>
+        <many-to-one class="gestion.torneos.model.EstadoInscripcion" lazy="false" name="estado">
+            <column name="estado_id_estado" not-null="true"/>
+        </many-to-one>
+        <many-to-one class="gestion.torneos.model.Torneo" lazy="false" name="torneo">
+            <column name="torneo_id_torneo" not-null="true"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>

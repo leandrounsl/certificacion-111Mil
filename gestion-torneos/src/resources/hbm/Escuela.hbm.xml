@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="db_torneos" name="gestion.torneos.model.Escuela" optimistic-lock="version" table="escuela">
+        <id name="idEscuela" type="int">
+            <column name="id_escuela"/>
+            <generator class="increment"/>
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" not-null="true"/>
+        </property>
+        <bag cascade="all" lazy="false" name="aspirantes" table="aspirante">
+            <key>
+                <column name="escuela_id_escuela" not-null="true"/>
+            </key>
+            <one-to-many class="gestion.torneos.model.Aspirante"/>
+        </bag>
+    </class>
+</hibernate-mapping>

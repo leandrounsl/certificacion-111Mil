@@ -1,0 +1,12 @@
+2019-02-28 21:11:51 DEBUG Main:58 - Intentando cargar Nimbus lookAndFeel
+2019-02-28 21:11:59 DEBUG Main:75 - El lookAndFeel fue cargado correctamente
+2019-02-28 21:12:00 DEBUG CategoriaDaoHibernateImpl:39 - Iniciando obtenerCategorias()
+2019-02-28 21:12:00 INFO  HibernateUtil:29 - Creando sessionFactory...
+2019-02-28 21:12:27 INFO  HibernateUtil:45 - SessionFactory creado correctamente
+2019-02-28 21:12:29 DEBUG EstadoInscripcionDaoHibernateImpl:24 - Iniciando bucarPorNombre() - nombre=Pre-Aprobada
+2019-02-28 21:12:30 DEBUG TorneoDaoHibernateImpl:24 - Iniciando bucarPorNombre() - nombre=Torneo de Atletismo
+2019-02-28 21:12:30 DEBUG EscuelaDaoHibernateImpl:25 - Iniciando obtenerEscuelas()
+2019-02-28 21:12:31 DEBUG DisciplinaDaoHibernateImpl:30 - Iniciando obtenerDisciplinas()
+2019-02-28 21:12:31 DEBUG CategoriaDaoHibernateImpl:39 - Iniciando obtenerCategorias()
+2019-02-28 21:12:31 DEBUG GestorInscripcion:117 - Iniciando proceso de inscripción
+2019-02-28 21:12:31 DEBUG PantallaInscripcion:50 - Iniciando GUI...
